@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+   font-family: "Kanit", serif;
+   box-sizing: border-box;
+}
+body{
+    background-image: url(./images/pexels-ganimatque-18345019.jpg);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+
+}
+section{
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    background-color: transparent;
+    padding: 30px ;
+    width: 420px;
+    border-radius: 20px;
+}
+section h1{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.input-box{
+    width: 100%;
+    position: relative;
+    margin-bottom: 25px;
+}
+input{
+   padding: 15px;
+   width: 100%;
+   border-radius: 25px;
+   outline: none;
+   background: transparent;
+   border: 2px solid rgba(255, 255, 255, 0.2);
+   color: white;
+   padding-right: 40px;
+}
+input::placeholder{
+    color: white;
+}
+.input-box i{
+    position: absolute;
+    transform: translateY(-50%);
+    right: 20px;
+    top: 50%;
+    color: white;
+}
+button{
+    outline: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 25px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: 0.5s;
+}
+button:hover{
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: white;
+}
+.registre-link{
+    text-align: center;
+    margin-top: 25px;
+    color: white;
+    font-size: 14px;
+}
+.registre-link a{
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+    font-weight: bold;    
+}
+.registre-link a:hover{
+      text-decoration: underline;
+}
+.pp{
+    text-decoration: none; 
+    text-align: center;
+     
+}
