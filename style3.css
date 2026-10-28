@@ -1,90 +1,132 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&display=swap');
 *{
     margin: 0;
     padding: 0;
-   font-family: "Kanit", serif;
-   box-sizing: border-box;
+    font-family: "Kanit", Arial, sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --teal: rgb(19, 70, 70);
+    --vert: rgb(124, 181, 12);
+    --orange: rgb(211, 125, 12);
+    --blanc: #ffffff;
 }
 body{
-    background-image: url(./images/pexels-ganimatque-18345019.jpg);
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-
+    padding: 24px 16px;
+    background:
+        linear-gradient(180deg, rgba(19, 70, 70, 0.55), rgba(0, 0, 0, 0.7)),
+        url(./images/pexels-ganimatque-18345019.jpg) center / cover;
 }
 section{
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+    max-width: 420px;
+    padding: 36px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 24px;
+    background-color: rgba(19, 70, 70, 0.35);
     backdrop-filter: blur(20px);
-    background-color: transparent;
-    padding: 30px ;
-    width: 420px;
-    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+.logo{
+    display: block;
+    text-align: center;
+    color: var(--orange);
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: 8px;
 }
 section h1{
-    color: white;
-    font-size: 30px;
+    color: var(--blanc);
+    font-size: 2rem;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 28px;
+    text-transform: capitalize;
 }
 .input-box{
     width: 100%;
     position: relative;
-    margin-bottom: 25px;
+    margin-bottom: 18px;
 }
 input{
-   padding: 15px;
-   width: 100%;
-   border-radius: 25px;
-   outline: none;
-   background: transparent;
-   border: 2px solid rgba(255, 255, 255, 0.2);
-   color: white;
-   padding-right: 40px;
+    padding: 15px 44px 15px 20px;
+    width: 100%;
+    border-radius: 99px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.08);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: var(--blanc);
+    font-size: 1rem;
+    transition: border-color 0.3s, background 0.3s;
+}
+input:focus{
+    border-color: var(--vert);
+    background: rgba(255, 255, 255, 0.12);
 }
 input::placeholder{
-    color: white;
+    color: rgba(255, 255, 255, 0.8);
 }
 .input-box i{
     position: absolute;
     transform: translateY(-50%);
     right: 20px;
     top: 50%;
-    color: white;
+    color: var(--blanc);
 }
 button{
-    outline: none;
+    margin-top: 8px;
     padding: 15px;
     width: 100%;
-    border-radius: 25px;
-    border: 2px solid transparent;
+    border-radius: 99px;
+    border: 2px solid var(--vert);
+    background: var(--vert);
+    color: var(--blanc);
+    font-size: 1.05rem;
+    font-weight: 600;
     cursor: pointer;
-    transition: 0.5s;
+    transition: background 0.3s;
 }
 button:hover{
     background-color: transparent;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    color: white;
 }
 .registre-link{
     text-align: center;
-    margin-top: 25px;
-    color: white;
-    font-size: 14px;
+    margin-top: 24px;
+    color: var(--blanc);
+    font-size: 0.95rem;
 }
 .registre-link a{
-    color: white;
+    color: var(--vert);
     text-decoration: none;
-    transition: 0.5s;
-    font-weight: bold;    
+    font-weight: 600;
 }
 .registre-link a:hover{
-      text-decoration: underline;
+    text-decoration: underline;
 }
 .pp{
-    text-decoration: none; 
     text-align: center;
-     
+    margin-top: 14px;
+}
+.pp a{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+.pp a:hover{
+    color: var(--blanc);
+    text-decoration: underline;
+}
+
+@media (max-width: 400px){
+    section{
+        padding: 28px 20px;
+    }
+    section h1{
+        font-size: 1.7rem;
+    }
 }

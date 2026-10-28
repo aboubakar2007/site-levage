@@ -1,99 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style2.css">
+    <title>Ferme Ivoire — Nos produits</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
     <header>
+        <a href="index.html" class="logo"><i class="fa-solid fa-cow"></i> Ferme Ivoire</a>
+        <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button>
         <nav>
             <ul>
-                <li><a href="index.html">accueil</a></li>
-                <li><a href="#produits">produits</a></li>
-                <li><a href="#contact">nous contacter</a></li>
-                <li><a href="inscription.html"><i class="fa-solid fa-user"></i></a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#produits">Produits</a></li>
+                <li><a href="#contact">Nous contacter</a></li>
+                <li><a href="inscription.html" class="compte"><i class="fa-solid fa-user"></i> Compte</a></li>
             </ul>
         </nav>
     </header>
+
     <div class="slider">
         <div class="slides">
-            <div class="slide"><img src="./images/global-vidéo/la-filiere-de-l-elevage-est-en-difficulte_i1200.jpg" alt="" width="1515" height="800" ></div>
-            <div class="slide"><img src="./images/global-vidéo/2000003781065.webp" alt="" width="1515" height="800"></div>
-            <div class="slide"><img src="./images/global-vidéo/Hog_confinement_barn_interior-Unknown-authorUnknown-author-Public-domain-via-Wikimedia-Commons.webp" alt="" width="1515" height="800"></div>
-            <div class="slide"><img src="./images/global-vidéo/istockphoto-1391705263-612x612.jpg" alt="" width="1515" height="800"></div>
-            
-            
+            <div class="slide"><img src="./images/global-vidéo/la-filiere-de-l-elevage-est-en-difficulte_i1200.jpg" alt="Troupeau dans une ferme"></div>
+            <div class="slide"><img src="./images/global-vidéo/2000003781065.webp" alt="Élevage de volailles"></div>
+            <div class="slide"><img src="./images/global-vidéo/Hog_confinement_barn_interior-Unknown-authorUnknown-author-Public-domain-via-Wikimedia-Commons.webp" alt="Intérieur d'une porcherie"></div>
+            <div class="slide"><img src="./images/global-vidéo/istockphoto-1391705263-612x612.jpg" alt="Animaux de la ferme"></div>
+        </div>
+        <div class="slider-texte">
+            <h1>Nos produits</h1>
+            <p>Des animaux élevés avec soin, de la ferme à votre table.</p>
         </div>
     </div>
+
     <section id="produits">
-        <h1>nos produits</h1>
+        <div class="section-titre">
+            <span>Catalogue</span>
+            <h2>Choisissez vos produits</h2>
+        </div>
         <div class="card1">
-            <div class="card">
-                <img src="./images/image de produits/pexels-brettjordan-840111.jpg" alt="">
-                <h3>poulet</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, nisi?</p>
-                <div class="bouton">
-                 <a href="connexion.html">   <button>acheter</button></a>
+            <article class="card">
+                <img src="./images/image de produits/pexels-brettjordan-840111.jpg" alt="Poulet">
+                <div class="card-corps">
+                    <h3>Poulet</h3>
+                    <p>Poulets fermiers élevés en plein air, nourris aux céréales.</p>
+                    <a href="connexion.html" class="bouton">Acheter <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
-            </div>
-            <div class="card">
-                <img src="./images/image de produits/pexels-jonasvonwerne-1344000.jpg" alt="">
-                <h3>cabri</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, odit.</p>
-                <div class="bouton">
-                    <a href="connexion.html">  <button>acheter</button></a>
+            </article>
+            <article class="card">
+                <img src="./images/image de produits/pexels-jonasvonwerne-1344000.jpg" alt="Cabri">
+                <div class="card-corps">
+                    <h3>Cabri</h3>
+                    <p>Cabris robustes, idéals pour l'élevage ou les grandes occasions.</p>
+                    <a href="connexion.html" class="bouton">Acheter <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
-            </div>
-            <div class="card">
-                <img src="./images/image de produits/pexels-klaus-nielsen-6294148.jpg" alt="">
-                <h3>oeuf</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, numquam.</p>
-                <div class="bouton">
-                    <a href="connexion.html">   <button>acheter</button></a>
+            </article>
+            <article class="card">
+                <img src="./images/image de produits/pexels-klaus-nielsen-6294148.jpg" alt="Œufs">
+                <div class="card-corps">
+                    <h3>Œuf</h3>
+                    <p>Œufs frais ramassés chaque matin, vendus à l'unité ou en plateau.</p>
+                    <a href="connexion.html" class="bouton">Acheter <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
-            </div>
-            <div class="card">
-                <img src="./images/image de produits/pexels-mali-110820.jpg" alt="">
-                <h3>cauchon</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, vero?</p>
-                <div class="bouton">
-                    <a href="connexion.html">     <button>acheter</button></a>
+            </article>
+            <article class="card">
+                <img src="./images/image de produits/pexels-mali-110820.jpg" alt="Cochon">
+                <div class="card-corps">
+                    <h3>Cochon</h3>
+                    <p>Porcs bien nourris et suivis par un vétérinaire tout au long de l'élevage.</p>
+                    <a href="connexion.html" class="bouton">Acheter <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
-            </div>
-            <div class="card">
-                <img src="./images/image de produits/pexels-pixabay-248167.jpg" alt="">
-                <h3>vache</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, debitis!</p>
-                <div class="bouton">
-                    <a href="connexion.html">    <button>acheter</button></a>
+            </article>
+            <article class="card">
+                <img src="./images/image de produits/pexels-pixabay-248167.jpg" alt="Vache">
+                <div class="card-corps">
+                    <h3>Vache</h3>
+                    <p>Bovins en bonne santé, pour la viande ou la production de lait.</p>
+                    <a href="connexion.html" class="bouton">Acheter <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
-            </div>
-            <div class="card">
-                <img src="./images/image de produits/pexels-wardmediauk-3384229.jpg" alt="">
-                <h3>mouton</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quaerat!</p>
-                <div class="bouton">
-                    <a href="connexion.html">    <button>acheter</button></a>
+            </article>
+            <article class="card">
+                <img src="./images/image de produits/pexels-wardmediauk-3384229.jpg" alt="Mouton">
+                <div class="card-corps">
+                    <h3>Mouton</h3>
+                    <p>Moutons élevés au pâturage, parfaits pour les fêtes et cérémonies.</p>
+                    <a href="connexion.html" class="bouton">Acheter <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
-            </div>
+            </article>
         </div>
     </section>
+
     <footer id="contact">
-        <span>nous réseaux sociaux:</span>
-        <div class="logo-foot">
-           <a href=""> <i class="fa-brands fa-instagram"></i></a>
-           <a href=""> <i class="fa-brands fa-facebook"></i></a>
-           <a href=""> <i class="fa-brands fa-youtube"></i></a>  
-            <a href=""><i class="fa-solid fa-x"></i></a>
+        <div class="foot-grille">
+            <div>
+                <a href="index.html" class="logo"><i class="fa-solid fa-cow"></i> Ferme Ivoire</a>
+                <p class="foot-texte">La qualité réelle des produits, directement de notre ferme.</p>
+                <span>Nos réseaux sociaux :</span>
+                <div class="logo-foot">
+                    <a href="" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <div class="foot">
+                <h3>Nous contacter</h3>
+                <a href="tel:+2250700082080"><i class="fa-brands fa-whatsapp"></i> 07 00 08 20 80</a>
+                <a href="tel:+2250544101222"><i class="fa-solid fa-phone"></i> 05 44 10 12 22</a>
+                <a href="mailto:fermeivoire@gmail.com"><i class="fa-solid fa-envelope"></i> fermeivoire@gmail.com</a>
+            </div>
         </div>
-        <div class="foot">
-        <a href="tel:+2250700082080"><i class="fa-brands fa-whatsapp"></i> 0700082080</a>
-        <a href="tel:+2250544101222"><i class="fa-solid fa-phone"></i> 0544101222</a>
-        <a href="mailto:fermeivoire@gmail.com"><i class="fa-solid fa-envelope"></i> fermeivoire@gmail.com</a>
-        </div>
+        <p class="copyright">© Ferme Ivoire</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

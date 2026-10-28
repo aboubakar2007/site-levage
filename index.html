@@ -1,40 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Ferme Ivoire — Élevage et vente d'animaux</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="global">
-        <video src="./images/global-vidéo/4927774-uhd_4096_2160_25fps.mp4" autoplay="autoplay" muted="" loop="infinite"></video>
+        <video src="./images/global-vidéo/4927774-uhd_4096_2160_25fps.mp4" poster="./images/global-vidéo/la-filiere-de-l-elevage-est-en-difficulte_i1200.jpg" autoplay muted loop playsinline></video>
         <header>
-           
+            <a href="index.html" class="titre"><i class="fa-solid fa-cow"></i> Ferme Ivoire</a>
+            <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
             <nav>
-                
                 <ul>
-                   <li><a href="" class="home">accueil</a></li>
-                   <li><a href="produit.html">nos produits</a></li>
-                   <li><a href="produit.html#contact">nous contacter</a></li>
-                   <li><a href="inscription.html"><i class="fa-solid fa-user"></i></a></li>
-               </ul>
+                    <li><a href="index.html" class="home">Accueil</a></li>
+                    <li><a href="produit.html">Nos produits</a></li>
+                    <li><a href="produit.html#contact">Nous contacter</a></li>
+                    <li><a href="inscription.html" class="compte"><i class="fa-solid fa-user"></i> Compte</a></li>
+                </ul>
             </nav>
-            <div class="titre">
-                <h1> ferme ivoire</h1>
-            </div>
         </header>
-            <div class="texte">
-                <p>
-                    Chez Ferme Ivoire,<br>
-                     nous sommes spécialisés dans l'élevage et la vente d'animaux
-                </p>
+
+        <div class="hero">
+            <span class="hero-tag">Élevage ivoirien</span>
+            <h1>Ferme Ivoire, la qualité réelle des produits !</h1>
+            <p>Chez Ferme Ivoire, nous sommes spécialisés dans l'élevage et la vente d'animaux.</p>
+            <div class="hero-boutons">
+                <a href="produit.html" class="btn btn-plein">Voir nos produits</a>
+                <a href="produit.html#contact" class="btn btn-contour">Nous contacter</a>
             </div>
-            <div class="texte2">
-                Ferme Ivoire, la qualité réelle des produits!   
-            </div>
+        </div>
+
+        <div class="atouts">
+            <div><i class="fa-solid fa-seedling"></i> Élevage naturel</div>
+            <div><i class="fa-solid fa-truck"></i> Livraison rapide</div>
+            <div><i class="fa-solid fa-shield-heart"></i> Animaux en bonne santé</div>
+        </div>
     </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
